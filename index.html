@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LuxeLocks Salon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @media (min-width: 1920px) {
+      body {
+        font-size: 1.25rem;
+      }
+      .main-container {
+        width: 1600px !important;
+        padding: 3rem !important;
+      }
+      .recommend-card {
+        width: 500px !important;
+        height: 350px !important;
+      }
+    }
+    @media (max-width: 430px) {
+      body {
+        font-size: 0.95rem;
+      }
+      .main-container {
+        width: 100vw !important;
+        border-width: 0 !important;
+        padding: 0.5rem !important;
+        box-shadow: none !important;
+      }
+      .recommend-card {
+        width: 100vw !important;
+        height: 200px !important;
+        border-radius: 1rem !important;
+      }
+      .flex {
+        flex-direction: column !important;
+        gap: 1rem !important;
+      }
+      .px-8 {
+        padding-left: 0.5rem !important;
+        padding-right: 0.5rem !important;
+      }
+      .py-8 {
+        padding-top: 0.5rem !important;
+        padding-bottom: 0.5rem !important;
+      }
+    }
+  </style>
+</head>
+<body class="bg-[#eaf3e0] min-h-screen flex items-center justify-center">
+  <div class="rounded-3xl shadow-lg w-[1100px] bg-[#eaf3e0] border-4 border-[#b7c9a6] p-6 main-container">
+    <!-- Top Bar -->
+    <div class="flex items-center justify-between px-8 pt-4 pb-2 bg-[#4b6b3c] rounded-2xl">
+      <div class="flex items-center gap-3">
+        <img src="https://img.icons8.com/ios-filled/50/4b6b3c/cat.png" alt="Logo" class="w-8 h-8 bg-white rounded-full p-1">
+        <span class="text-2xl font-serif text-[#2c3e1f]">LuxeLocks Salon</span>
+      </div>
+      <div class="flex items-center gap-8">
+        <nav class="flex gap-8 text-[#eaf3e0] font-medium">
+          <a href="#" class="hover:text-[#f9a94a] transition">Home</a>
+          <a href="services.html" class="hover:text-[#f9a94a] transition">Services</a>
+          <a href="#" class="hover:text-[#f9a94a] transition">Salon</a>
+          <a href="#" class="hover:text-[#f9a94a] transition">Gift Card</a>
+        </nav>
+        <button class="bg-[#f9a94a] text-white px-6 py-2 rounded-full font-semibold shadow hover:bg-[#e88c1a] transition flex items-center gap-2">
+          Sign in
+          <span class="w-2 h-2 bg-white rounded-full"></span>
+        </button>
+      </div>
+    </div>
+    <!-- Main Content -->
+    <div class="flex gap-8 px-8 py-8 bg-[#f6fff0] rounded-3xl mt-6">
+      <!-- Left Section -->
+      <div class="flex-1">
+        <h1 class="text-5xl font-serif text-[#2c3e1f] mb-6 leading-tight">Beauty comes first, style<br>follows every step.</h1>
+        <p class="text-[#2c3e1f] mb-8 text-lg">Whether it’s a quick touch-up or a full transformation, we’re here to bring your unique style to life.</p>
+        <!-- Search Bar -->
+        <div class="flex items-center bg-white rounded-full shadow px-2 py-2 mb-4 border-2 border-[#eaf3e0]">
+          <button class="bg-[#4b6b3c] text-white px-6 py-2 rounded-full font-semibold mr-2 shadow hover:bg-[#355027] transition">Home</button>
+          <button class="bg-[#eaf3e0] text-[#4b6b3c] px-6 py-2 rounded-full font-semibold mr-2 shadow hover:bg-[#d1e7c6] transition">Institute</button>
+          <input type="text" placeholder="Search services" class="flex-1 px-4 py-2 bg-transparent outline-none text-[#2c3e1f] text-lg">
+          <button class="bg-[#f9a94a] p-3 rounded-full hover:bg-[#e88c1a] transition flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35M17 11a6 6 0 11-12 0 6 6 0 0112 0z" /></svg>
+          </button>
+        </div>
+        <div class="flex items-center gap-2 mt-2">
+          <span class="bg-[#2c3e1f] text-white px-2 py-1 rounded-full text-xs font-bold">★</span>
+          <span class="text-[#2c3e1f] text-sm">On Trusted Pilot <span class="font-bold">150+ Reviews</span></span>
+        </div>
+      </div>
+      <!-- Right Recommendation Card -->
+      <div class="w-[350px] bg-white rounded-2xl shadow-lg overflow-hidden relative recommend-card">
+        <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80" alt="Recommended" class="w-full h-56 object-cover">
+        <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-[#f9a94a]/70 to-transparent"></div>
+        <div class="absolute bottom-0 left-0 w-full p-6">
+          <h2 class="text-white text-2xl font-serif mb-2">Recommended</h2>
+          <div class="bg-[#2c3e1f]/80 rounded-lg p-4">
+            <div class="flex items-center justify-between">
+              <span class="text-white font-semibold text-lg">Deep Conditioning Treatments</span>
+              <span class="text-[#f9a94a] text-xs flex items-center gap-1">★ <span>(2.3k+)</span></span>
+            </div>
+            <div class="text-[#eaf3e0] text-xs mt-1">Beause Monde du Esthétique</div>
+            <div class="text-[#eaf3e0] text-xs">Montmartre & Sacré-Cœur Basilica (1km away)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer"></div>
+  <script>
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer').innerHTML = data;
+      });
+  </script>
+  </div>
+  
+</body>
+</html>
